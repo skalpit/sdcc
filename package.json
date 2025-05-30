@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy && postcss src/assets/css/tailwind.css -o _site/assets/css/style.css",
+    "build": "eleventy && npx postcss src/assets/css/tailwind.css -o _site/assets/css/style.css",
     "start": "eleventy --serve"
   },
   "keywords": [],
@@ -13,8 +13,10 @@
   "type": "commonjs",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.0",
+    "@tailwindcss/postcss": "^4.1.8",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.4",
+    "postcss-cli": "^11.0.1",
     "tailwindcss": "^4.1.8"
   }
 }

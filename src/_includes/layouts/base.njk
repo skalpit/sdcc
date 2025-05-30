@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title or "Southern Districts Cricket Club" }}</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100">
+  {% include "partials/header.njk" %}
+  <main class="container mx-auto p-4">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+</body>
+</html>

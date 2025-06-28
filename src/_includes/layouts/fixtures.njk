@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold text-gray-900 mb-8">{{ title }}</h1>
+        
+        <!-- Filter buttons -->
+        <div class="mb-8 flex flex-wrap gap-2">
+            <button class="filter-btn active" data-filter="all">All Grades</button>
+            <button class="filter-btn" data-filter="mens">Men's Cricket</button>
+            <button class="filter-btn" data-filter="womens">Women's Cricket</button>
+            <button class="filter-btn" data-filter="junior">Junior Cricket</button>
+        </div>
+        
+        {{ content | safe }}
+        
+        <!-- Matches will be loaded here -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="fixtures-container">
+            <!-- Matches populated by JavaScript -->
+        </div>
+    </div>
+</section>

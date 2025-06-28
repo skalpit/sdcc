@@ -1,0 +1,78 @@
+<section class="py-8 lg:py-10 bg-secondary-50">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-6">
+            <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-800 mb-2">
+                {{ pageData.clubUpdates.title }}
+            </h2>
+            <p class="text-primary-600 text-base sm:text-lg font-medium">
+                {{ pageData.clubUpdates.subtitle }}
+            </p>
+            <!-- Decorative underline -->
+            <div class="w-16 h-1 bg-accent-400 mx-auto mt-3"></div>
+        </div>
+        
+        <!-- Updates Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+            <!-- Latest News Card -->
+            <div class="card hover-lift">
+                <div class="text-center space-y-4">
+                    <!-- Icon -->
+                    <div class="mx-auto w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                        </svg>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="space-y-3">
+                        <h3 class="font-heading text-2xl font-semibold text-primary-800">
+                            {{ pageData.clubUpdates.latestNews.title }}
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            {{ pageData.clubUpdates.latestNews.description }}
+                        </p>
+                    </div>
+                    
+                    <!-- Button -->
+                    <div class="pt-2">
+                        <a href="{{ pageData.clubUpdates.latestNews.buttonUrl }}" 
+                           class="btn-dark text-sm px-5 py-2.5">
+                            {{ pageData.clubUpdates.latestNews.buttonText }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fixtures & Results Card -->
+            <div class="card hover-lift">
+                <div class="text-center space-y-4">
+                    <!-- Icon -->
+                    <div class="mx-auto w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="space-y-3">
+                        <h3 class="font-heading text-2xl font-semibold text-primary-800">
+                            {{ pageData.clubUpdates.fixtures.title }}
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            {{ pageData.clubUpdates.fixtures.description }}
+                        </p>
+                    </div>
+                    
+                    <!-- Button -->
+                    <div class="pt-2">
+                        <a href="{{ pageData.clubUpdates.fixtures.buttonUrl }}" 
+                           class="btn-dark text-sm px-5 py-2.5">
+                            {{ pageData.clubUpdates.fixtures.buttonText }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

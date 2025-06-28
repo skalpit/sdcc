@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "title": "Welcome to Southern District Cricket Club, Darwin",
+    "subtitle": "The Crocs - Pride of Darwin Cricket",
+    "description": "Join us for an exciting season of cricket! Discover our teams, follow our progress, and become part of our vibrant community.",
+    "primaryButton": {
+      "text": "Learn More About Us",
+      "url": "/about/"
+    },
+    "secondaryButton": {
+      "text": "View Fixtures",
+      "url": "/fixtures/"
+    }
+  },
+  "clubUpdates": {
+    "title": "Club Updates",
+    "subtitle": "News & Match Information",
+    "latestNews": {
+      "title": "Latest News",
+      "description": "Stay up to date with all club announcements and news via our Facebook page.",
+      "buttonText": "View Club News",
+      "buttonUrl": "/news/"
+    },
+    "fixtures": {
+      "title": "Fixtures & Results",
+      "description": "Check out our upcoming matches and recent results on PlayHQ.",
+      "buttonText": "View Fixtures & Results",
+      "buttonUrl": "/fixtures/"
+    }
+  },
+  "joinSection": {
+    "title": "Join The The Crocs!",
+    "description": "Whether you're an experienced player, a budding junior, or a passionate supporter, there's a place for you at Southern District Cricket Club.",
+    "buttonText": "Find Out How to Join",
+    "buttonUrl": "/about/#join"
+  },
+  "footer": {
+    "clubName": "Southern District Cricket Club, Darwin",
+    "nickname": "The Crocs",
+    "address": "Marrara Cricket Ground, Darwin, NT",
+    "copyright": "© 2025 Southern District Cricket Club, Darwin. All rights reserved.",
+    "credit": "Website by AI Engineer",
+    "socialText": "Follow us on social media for the latest updates!"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Southern District Cricket Club, Darwin",
+  "subtitle": "The Crocs",
+  "tagline": "Pride of Darwin Cricket",
+  "description": "Join us for an exciting season of cricket! Discover our teams, follow our progress, and become part of our vibrant community.",
+  "url": "https://yourusername.github.io/southern-district-cricket-club",
+  "author": "Southern District Cricket Club",
+  "email": "info@southerndistrictcc.com.au",
+  "phone": "+61 8 1234 5678",
+  "address": {
+    "venue": "Marrara Cricket Ground",
+    "street": "123 Cricket Drive",
+    "city": "Darwin",
+    "state": "NT",
+    "postcode": "0812",
+    "country": "Australia"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/SDCCCrocs/"
+  },
+  "navigation": [
+    {
+      "title": "Home",
+      "url": "/",
+      "active": true
+    },
+    {
+      "title": "About Us",
+      "url": "/about/"
+    },
+    {
+      "title": "News",
+      "url": "/news/"
+    },
+    {
+      "title": "Fixtures & Results",
+      "url": "/fixtures/"
+    },
+    {
+      "title": "Club Stats",
+      "url": "/stats/"
+    },
+    {
+      "title": "Sponsors",
+      "url": "/sponsors/"
+    }
+  ],
+  "footerLinks": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "About Us",
+      "url": "/about/"
+    },
+    {
+      "title": "Fixtures",
+      "url": "/fixtures/"
+    },
+    {
+      "title": "News",
+      "url": "/news/"
+    },
+    {
+      "title": "Contact",
+      "url": "/contact/"
+    }
+  ],
+  "buildTime": "{{ 'now' | date: '%Y-%m-%d %H:%M:%S' }}"
+}

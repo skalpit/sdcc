@@ -18,13 +18,15 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Build CSS
-        run: npm run css:build
+        run: npm ci
 
       - name: Build
         run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site' # The directory containing your built site files
         
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
@@ -32,3 +34,4 @@ jobs:
           github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./_site
           publish_branch: gh-pages
+

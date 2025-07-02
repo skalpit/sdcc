@@ -1,0 +1,172 @@
+---
+layout: layouts/base.njk
+title: About Us
+description: Learn about Southern District Cricket Club Darwin - The Crocs. Our history, values, and commitment to cricket excellence in the Northern Territory.
+---
+
+<!-- Hero Section -->
+<section class="bg-secondary-50 py-8 lg:py-10">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-800 mb-3">
+                About Southern District Cricket Club, Darwin
+            </h1>
+            <p class="text-lg text-primary-600 mb-4">
+                Get to know the The Crocs
+            </p>
+            <div class="w-20 h-1 bg-accent-400 mx-auto"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="page-section bg-white">
+    <div class="container">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-heading text-2xl sm:text-3xl font-bold text-primary-800 mb-4">
+                Our Story
+            </h2>
+            <div class="space-y-4 text-gray-700 leading-relaxed">
+                {% for paragraph in about.story.description %}
+                <p>{{ paragraph }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Club Motto Section -->
+<section class="page-section bg-primary-800 text-white">
+    <div class="container">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="font-heading text-2xl sm:text-3xl font-bold mb-6 text-accent-400">
+                Our Club Motto
+            </h2>
+            <div class="bg-primary-700 rounded-xl p-6 shadow-lg">                
+                <div class="space-y-3 text-yellow-300">
+                    {% for option in about.motto.options %}
+                    <p><strong>{{ option }}</strong></p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Club Mission Section -->
+<section class="page-section bg-secondary-50">
+    <div class="container">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-heading text-2xl sm:text-3xl font-bold text-primary-800 mb-6">
+                Club Mission
+            </h2>
+            <div class="w-20 h-1 bg-accent-400 mx-auto mb-6"></div>
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+                <p class="text-gray-700 leading-relaxed">
+                    {{ about.mission }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Meet the Committee Section -->
+<section class="page-section bg-white">
+    <div class="container">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="font-heading text-2xl sm:text-3xl font-bold text-primary-800 mb-4">
+                Meet the Committee
+            </h2>
+            <p class="text-gray-600 mb-8">
+                The dedicated team behind the Crocs
+            </p>
+            <div class="w-20 h-1 bg-accent-400 mx-auto mb-8"></div>
+            
+            <!-- Committee Members Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {% for member in about.committee %}
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden border-4 border-accent-500 relative">
+                        <img src="/assets/images/user.png" 
+                             alt="{{ member.name }}" 
+                             class="w-full h-full object-cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="absolute inset-0 bg-accent-400 flex items-center justify-center" style="display: none;">
+                            <span class="text-primary-800 font-bold text-sm">{{ member.initials }}</span>
+                        </div>
+                    </div>
+                    <h3 class="font-heading text-lg font-semibold text-primary-800 mb-1">
+                        {{ member.name }}
+                    </h3>
+                    <p class="text-accent-600 font-medium text-sm mb-2">
+                        {{ member.position }}
+                    </p>
+                    {% if member.bio %}
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        {{ member.bio }}
+                    </p>
+                    {% endif %}
+                    {% if member.email %}
+                    <div class="mt-3">
+                        <a href="mailto:{{ member.email }}" 
+                           class="text-primary-600 hover:text-primary-700 text-xs">
+                            Contact
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Facilities Section -->
+<section class="page-section bg-secondary-50">
+    <div class="container">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold text-primary-800 mb-4">
+                    Our Facilities
+                </h2>
+                <p class="text-gray-600">
+                    Our club boasts excellent facilities to support our players and members.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <!-- Facilities Image -->
+                <div class="order-2 lg:order-1">
+                    <div class="bg-white rounded-xl shadow-lg p-4">
+                        <img src="/assets/images/gerry-wood-oval.jpeg" 
+                             alt="Club Facilities" 
+                             class="w-full h-64 object-cover rounded-lg" 
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5Ij5DbHViIEZhY2lsaXRpZXM8L3RleHQ+PC9zdmc+'">
+                    </div>
+                </div>
+                
+                <!-- Facilities List -->
+                <div class="order-1 lg:order-2">
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <ul class="space-y-3">
+                            {% for facility in about.facilities %}
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700 text-sm">{{ facility }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <!--
+                        <div class="mt-6 pt-6 border-t border-gray-200">
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                {{ about.facilitiesDescription }}
+                            </p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

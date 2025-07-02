@@ -1,22 +1,42 @@
 {
-  "name": "sdcc",
+  "name": "southern-district-cricket-club",
   "version": "1.0.0",
-  "description": "",
+  "description": "Southern District Cricket Club Darwin",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy && npx postcss src/assets/css/tailwind.css -o _site/assets/css/style.css",
-    "start": "eleventy --serve"
+    "dev": "concurrently \"npm run css:watch\" \"npm run eleventy:dev\"",
+    "build": "npm run css:build && npm run eleventy:build",
+    "css:build": "postcss src/assets/css/input.css -o src/assets/css/output.css --config postcss.config.js",
+    "css:watch": "postcss src/assets/css/input.css -o src/assets/css/output.css --config postcss.config.js --watch",
+    "eleventy:dev": "eleventy --serve --port=8080",
+    "eleventy:build": "eleventy",
+    "clean": "if exist _site rmdir /s /q _site",
+    "clean:unix": "rm -rf _site",
+    "start": "npm run dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": [
+    "cricket",
+    "sports",
+    "club",
+    "darwin",
+    "eleventy",
+    "static-site"
+  ],
+  "author": "Hrishi Digital Solutions Pty Ltd",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.0",
     "@tailwindcss/postcss": "^4.1.8",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.4",
     "postcss-cli": "^11.0.1",
-    "tailwindcss": "^4.1.8"
+    "tailwindcss": "^4.1.8",
+    "concurrently": "^9.1.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

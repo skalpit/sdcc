@@ -1,0 +1,59 @@
+{
+  "title": "Southern District Cricket Club, Darwin",
+  "subtitle": "The Crocs",
+  "tagline": "Pride of Darwin Cricket",
+  "description": "Join us for an exciting season of cricket! Discover our teams, follow our progress, and become part of our vibrant community.",
+  "url": "https://yourusername.github.io/southern-district-cricket-club",
+  "author": "Southern District Cricket Club",
+  "email": "sdcccrocs@gmail.com",
+  "phone": "0448 883239",
+  "address": {
+    "venue": "GERRY WOOD OVAL",
+    "street": "Freds Pass Reserve",
+    "city": "Bees Creek",
+    "state": "NT",
+    "postcode": "0822",
+    "country": "Australia"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/SDCCCrocs/"
+  },
+  "navigation": [
+    {
+      "title": "Home",
+      "url": "/",
+      "active": true
+    },
+    {
+      "title": "About Us",
+      "url": "/about/"
+    },
+    {
+      "title": "News",
+      "url": "/news/"
+    },
+    {
+      "title": "Fixtures & Results",
+      "url": "/fixtures/"
+    }
+  ],
+  "footerLinks": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "About Us",
+      "url": "/about/"
+    },
+    {
+      "title": "Fixtures",
+      "url": "/fixtures/"
+    },
+    {
+      "title": "News",
+      "url": "/news/"
+    }
+  ],
+  "buildTime": "{{ 'now' | date: '%Y-%m-%d %H:%M:%S' }}"
+}

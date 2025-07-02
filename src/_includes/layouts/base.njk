@@ -1,15 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ title or "Southern Districts Cricket Club" }}</title>
-  <link href="/assets/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if title %}{{ title }} - {{ site.title }}{% else %}{{ site.title }} - {{ site.tagline }}{% endif %}</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="keywords" content="cricket, sports club, Darwin, NT, Australia, The Crocs, Southern District">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{% if title %}{{ title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="{{ site.title }}">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if title %}{{ title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/output.css">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsClub",
+        "name": "{{ site.title }}",
+        "alternateName": "{{ site.subtitle }}",
+        "description": "{{ site.description }}",
+        "url": "{{ site.url }}",
+        "telephone": "{{ site.phone }}",
+        "email": "{{ site.email }}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ site.address.street }}",
+            "addressLocality": "{{ site.address.city }}",
+            "addressRegion": "{{ site.address.state }}",
+            "postalCode": "{{ site.address.postcode }}",
+            "addressCountry": "{{ site.address.country }}"
+        },
+        "sport": "Cricket",
+        "sameAs": [
+            "{{ site.social.facebook }}"
+        ]
+    }
+    </script>
 </head>
-<body class="font-sans bg-gray-100">
-  {% include "partials/header.njk" %}
-  <main class="container mx-auto p-4">
-    {{ content | safe }}
-  </main>
-  {% include "partials/footer.njk" %}
+<body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-accent-400 text-primary-900 px-4 py-2 rounded-md font-medium z-50 transition-all">
+        Skip to main content
+    </a>
+    
+    <!-- Header -->
+    {% include "components/header.njk" %}
+    
+    <!-- Main Content -->
+    <main id="main-content" class="flex-1">
+        {{ content | safe }}
+    </main>
+    
+    <!-- Footer -->
+    {% include "components/footer.njk" %}
+    
+    <!-- Scripts -->
+    <script src="/assets/js/main.js" defer></script>
+    {% if page.url == "/news/" or page.url == "/fixtures/" %}
+    <script src="/assets/js/facebook-widget.js" defer></script>
+    {% endif %}
+    
+    <!-- Google Analytics (placeholder - replace with your tracking ID) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
+    -->
 </body>
 </html>

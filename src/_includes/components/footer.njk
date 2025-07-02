@@ -1,0 +1,78 @@
+<footer class="bg-primary-800 text-white">
+    <div class="container section">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+            <!-- Club Information -->
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-heading text-xl font-semibold mb-2">
+                        {{ pageData.footer.clubName }}
+                    </h3>
+                    <p class="text-accent-400 font-medium text-lg">
+                        {{ pageData.footer.nickname }}
+                    </p>
+                </div>
+                <div class="text-gray-300">
+                    <p>{{ pageData.footer.address }}</p>
+                    <p class="mt-2">
+                        <a href="tel:{{ site.phone }}" class="hover:text-accent-400 transition-colors">
+                            {{ site.phone }}
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:{{ site.email }}" class="hover:text-accent-400 transition-colors">
+                            {{ site.email }}
+                        </a>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="space-y-4">
+                <h3 class="font-heading text-xl font-semibold">Quick Links</h3>
+                <nav class="space-y-2" aria-label="Footer Navigation">
+                    {% for link in site.footerLinks %}
+                    <a href="{{ link.url }}" 
+                       class="block text-gray-300 hover:text-accent-400 transition-colors">
+                        {{ link.title }}
+                    </a>
+                    {% endfor %}
+                </nav>
+            </div>
+            
+            <!-- Connect With Us -->
+            <div class="space-y-4">
+                <h3 class="font-heading text-xl font-semibold">Connect With Us</h3>
+                <p class="text-gray-300">{{ pageData.footer.socialText }}</p>
+                
+                <!-- Social Media Links - Facebook Only -->
+                <div class="flex space-x-4">
+                    {% if site.social.facebook %}
+                    <a href="{{ site.social.facebook }}" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="text-gray-300 hover:text-accent-400 transition-colors"
+                       aria-label="Follow us on Facebook">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="border-t border-primary-700 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <p class="text-gray-300 text-sm">
+                {{ pageData.footer.copyright }}
+            </p>
+            <p class="text-gray-400 text-sm">
+                <a href="{{ pageData.footer.creditUrl }}" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                {{ pageData.footer.credit }}
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>

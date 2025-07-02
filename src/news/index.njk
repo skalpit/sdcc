@@ -1,0 +1,120 @@
+---
+layout: layouts/base.njk
+title: Club News
+description: Stay up to date with all club announcements and news from Southern District Cricket Club Darwin - The Crocs via our Facebook page.
+---
+<!-- Hero Section -->
+<section class="bg-secondary-50 py-8 lg:py-10">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="ffont-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-800 mb-3">
+                {{ pageData.clubUpdates.title }}
+            </h1>
+            <p class="text-lg text-primary-600 mb-4">
+                Latest updates, announcements, and posts from our Facebook page.
+            </p>
+            <div class="w-24 h-1 bg-accent-400 mx-auto"></div>
+        </div>
+    </div> 
+</section>
+
+<!-- Facebook Feed Section -->
+<section class="page-section bg-white">
+    <div class="container">
+        <div class="max-w-5xl mx-auto">
+            <!-- Introduction -->
+            <div class="text-center mb-12">
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <div class="flex items-center justify-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </div>
+                        <h2 class="font-heading text-2xl sm:text-3xl font-semibold text-primary-800">
+                            Follow The Crocs on Facebook
+                        </h2>
+                    </div>
+                    <p class="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
+                        Follow us on Facebook for the very latest news, match updates, photos, and community events. 
+                        Our embedded feed below shows our recent activity.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Facebook Feed Container -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <!-- Feed Header -->
+                <div class="bg-gradient-to-r from-primary-600 to-primary-700 p-6">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                                <img src="/assets/images/logo.png" alt="The Crocs Logo" class="w-12 h-12 rounded-full">
+                            </div>
+                            <div class="text-white">
+                                <h3 class="font-heading text-xl font-semibold">Southern District Cricket Club</h3>
+                                <p class="text-primary-100">The Crocs • Darwin, NT</p>
+                            </div>
+                        </div>
+                        <a href="https://www.facebook.com/SDCCCrocs/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="btn-primary flex items-center space-x-2 text-sm">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                            <span>Follow Page</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Facebook Plugin Container -->
+                <div class="p-6 bg-gray-50 text-center">
+                    <div class="bg-white rounded-lg shadow-sm">
+                        <!-- Facebook Page Plugin -->
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v23.0&appId=593071513486854"></script>
+                        
+                        <div class="fb-page" 
+                            data-href="https://www.facebook.com/SDCCCrocs/" 
+                            data-tabs="timeline" 
+                            data-width="" 
+                            data-height="800" 
+                            data-small-header="false" 
+                            data-adapt-container-width="true" 
+                            data-hide-cover="false" 
+                            data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/SDCCCrocs/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/SDCCCrocs/">Southern Districts Cricket Club</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="text-center mt-12">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="font-heading text-2xl font-semibold text-primary-800 mb-4">
+                        Stay Connected
+                    </h3>
+                    <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                        Don't miss out on important club announcements, match results, and community events. 
+                        Like our Facebook page and turn on notifications to stay up to date.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="https://www.facebook.com/SDCCCrocs/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="btn-primary">
+                            Visit our Facebook Page
+                        </a>
+                        <a href="/about/" class="btn-secondary">
+                            Learn More About The Club
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

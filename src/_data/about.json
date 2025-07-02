@@ -1,0 +1,97 @@
+{
+  "story": {
+    "foundingYear": "1985",
+    "groundName": "Marrara Cricket Ground",
+    "description": [
+      "Founded in 1985, Southern District Cricket Club, Darwin has a rich history of fostering cricketing talent and sportsmanship in Darwin. We are more than just a cricket club; we are a community dedicated to promoting the spirit of cricket, teamwork, and fair play. From our passionate senior teams to our vibrant junior programs, we strive for excellence on and off the field.",
+      "Our home ground, Marrara Cricket Ground, is a hub for cricket enthusiasts. We welcome players of all ages and skill levels."
+    ]
+  },
+  "motto": {
+    "options": [
+      "★★Darwin's South: Play Hard, Play Fair, Together.★★"
+    ]
+  },
+  "mission": "To provide a welcoming and competitive environment for cricketers of all ages and abilities in Darwin, fostering skill development, sportsmanship, and a lifelong love for the game, while actively contributing to our local community.",
+  "committee": [
+    {
+      "name": "Clint Hayward",
+      "position": "President",
+      "initials": "CH",
+      "email": "president@southerndistrictcc.com.au",
+      "bio": "Clint has been with the club for over 15 years and brings extensive leadership experience to the role."
+    },
+    {
+      "name": "Tory St Clair",
+      "position": "Vice President",
+      "initials": "TC",
+      "email": "vicepresident@southerndistrictcc.com.au",
+      "bio": "Tory is passionate about junior development and community engagement initiatives."
+    },
+    {
+      "name": "Alison Jenkins",
+      "position": "Secretary",
+      "initials": "AJ",
+      "email": "secretary@southerndistrictcc.com.au",
+      "bio": "Alison manages all club communications and administrative duties with great attention to detail."
+    },
+    {
+      "name": "Jennie Wilton",
+      "position": "Treasurer",
+      "initials": "JW",
+      "email": "treasurer@southerndistrictcc.com.au",
+      "bio": "Jennie oversees the club's finances and ensures fiscal responsibility across all operations."
+    },
+    {
+      "name": "Craig Johnston",
+      "position": "Junior Cricket Coordinator",
+      "initials": "CJ",
+      "email": "craig@kelesconstructions.com.au"
+    },
+    {
+      "name": "Stu Barker",
+      "position": "General Committee Member",
+      "initials": "SB"
+    },
+    {
+      "name": "Heidi Mylius",
+      "position": "General Committee Member",
+      "initials": "HM"
+    },
+    {
+      "name": "Michelle Hayward",
+      "position": "General Committee Member",
+      "initials": "MH"
+    },
+    {
+      "name": "Dylan Mullen",
+      "position": "General Committee Member",
+      "initials": "DM"
+    },
+    {
+      "name": "Belinda Shaw",
+      "position": "General Committee Member",
+      "initials": "BS"
+    },
+    {
+      "name": "Rebecca Doevendans",
+      "position": "General Committee Member",
+      "initials": "RD"
+    },
+    {
+      "name": "Grant Burton",
+      "position": "General Committee Member",
+      "initials": "GB"
+    }
+  ],
+  "facilities": [
+    "Well-maintained turf pitches.",
+    "Modern training nets for practice sessions.",
+    "A comfortable clubhouse with amenities.",
+    "Ample parking and spectator areas.",
+    "Modern change rooms and shower facilities.",
+    "Equipment storage and maintenance areas.",
+    "Scoreboard and electronic timing systems."
+  ],
+  "facilitiesDescription": "We are committed to continuously improving our facilities to provide the best possible experience for everyone involved with The Crocs."
+}

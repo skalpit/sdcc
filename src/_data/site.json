@@ -5,14 +5,14 @@
   "description": "Join us for an exciting season of cricket! Discover our teams, follow our progress, and become part of our vibrant community.",
   "url": "https://yourusername.github.io/southern-district-cricket-club",
   "author": "Southern District Cricket Club",
-  "email": "info@southerndistrictcc.com.au",
-  "phone": "+61 8 1234 5678",
+  "email": "sdcccrocs@gmail.com",
+  "phone": "0448 883239",
   "address": {
-    "venue": "Marrara Cricket Ground",
-    "street": "123 Cricket Drive",
-    "city": "Darwin",
+    "venue": "GERRY WOOD OVAL",
+    "street": "Freds Pass Reserve",
+    "city": "Bees Creek",
     "state": "NT",
-    "postcode": "0812",
+    "postcode": "0822",
     "country": "Australia"
   },
   "social": {
@@ -35,14 +35,6 @@
     {
       "title": "Fixtures & Results",
       "url": "/fixtures/"
-    },
-    {
-      "title": "Club Stats",
-      "url": "/stats/"
-    },
-    {
-      "title": "Sponsors",
-      "url": "/sponsors/"
     }
   ],
   "footerLinks": [
@@ -61,10 +53,6 @@
     {
       "title": "News",
       "url": "/news/"
-    },
-    {
-      "title": "Contact",
-      "url": "/contact/"
     }
   ],
   "buildTime": "{{ 'now' | date: '%Y-%m-%d %H:%M:%S' }}"

@@ -27,12 +27,9 @@ description: Learn about Southern District Cricket Club Darwin - The Crocs. Our 
                 Our Story
             </h2>
             <div class="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                    Founded in [Year], Southern District Cricket Club, Darwin has a rich history of fostering cricketing talent and sportsmanship in Darwin. We are more than just a cricket club; we are a community dedicated to promoting the spirit of cricket, teamwork, and fair play. From our passionate senior teams to our vibrant junior programs, we strive for excellence on and off the field.
-                </p>
-                <p>
-                    Our home ground, [Club Ground Name if known, else "Marrara Cricket Ground (example)"], is a hub for cricket enthusiasts. We welcome players of all ages and skill levels.
-                </p>
+                {% for paragraph in about.story.description %}
+                <p>{{ paragraph }}</p>
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -45,23 +42,12 @@ description: Learn about Southern District Cricket Club Darwin - The Crocs. Our 
             <h2 class="font-heading text-2xl sm:text-3xl font-bold mb-6 text-accent-400">
                 Our Club Motto
             </h2>
-            <div class="bg-primary-700 rounded-xl p-6 shadow-lg">
-                <p class="text-accent-400 text-lg font-medium mb-4 italic">
-                    "Here are a few options for Southern District Cricket Club, Darwin, keeping it short, inspiring, and thematic (sportsmanship, community, passion):"
-                </p>
+            <div class="bg-primary-700 rounded-xl p-6 shadow-lg">                
                 <div class="space-y-3 text-yellow-300">
-                    <p><strong>1. ★★Southern Spirit: Our Game, Our Community.★★ (7 words)</strong></p>
-                    <p><strong>2. ★★Fair Play, Passionate Hearts, Southern Pride.★★ (7 words)</strong></p>
-                    <p><strong>3. ★★Darwin's South: Play Hard, Play Fair, Together.★★ (7 words)</strong></p>
-                    <p><strong>4. ★★Heart of the South, Spirit of Cricket.★★ (7 words)</strong></p>
-                    <p><strong>5. ★★United by the Wicket, Strong in the South.★★ (8 words)</strong></p>
+                    {% for option in about.motto.options %}
+                    <p><strong>{{ option }}</strong></p>
+                    {% endfor %}
                 </div>
-                <p class="text-accent-400 text-sm mt-4 italic">
-                    Choose the one that best resonates with the club's feel!"
-                </p>
-                <p class="text-xs text-gray-300 mt-3">
-                    (Motto suggestions powered by Claude AI)
-                </p>
             </div>
         </div>
     </div>
@@ -77,7 +63,7 @@ description: Learn about Southern District Cricket Club Darwin - The Crocs. Our 
             <div class="w-20 h-1 bg-accent-400 mx-auto mb-6"></div>
             <div class="bg-white rounded-xl p-6 shadow-lg">
                 <p class="text-gray-700 leading-relaxed">
-                    To provide a welcoming and competitive environment for cricketers of all ages and abilities in Darwin, fostering skill development, sportsmanship, and a lifelong love for the game, while actively contributing to our local community.
+                    {{ about.mission }}
                 </p>
             </div>
         </div>
@@ -97,67 +83,39 @@ description: Learn about Southern District Cricket Club Darwin - The Crocs. Our 
             <div class="w-20 h-1 bg-accent-400 mx-auto mb-8"></div>
             
             <!-- Committee Members Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- President -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {% for member in about.committee %}
                 <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-                    <div class="w-20 h-20 rounded-full bg-accent-400 border-4 border-accent-500 mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-primary-800 font-bold text-sm">John Sm</span>
-                    </div>
-                    <h3 class="font-heading text-lg font-semibold text-primary-800 mb-1">
-                        John Smith
-                    </h3>
-                    <p class="text-accent-600 font-medium text-sm">
-                        President
-                    </p>
-                </div>
-                
-                <!-- Vice President -->
-                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-                    <div class="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden border-4 border-accent-500">
-                        <img src="/assets/images/committee/jane-doe.jpg" alt="Jane Doe" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="w-full h-full bg-accent-400 flex items-center justify-center" style="display: none;">
-                            <span class="text-primary-800 font-bold text-sm">JD</span>
+                    <div class="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden border-4 border-accent-500 relative">
+                        <img src="/assets/images/user.png" 
+                             alt="{{ member.name }}" 
+                             class="w-full h-full object-cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="absolute inset-0 bg-accent-400 flex items-center justify-center" style="display: none;">
+                            <span class="text-primary-800 font-bold text-sm">{{ member.initials }}</span>
                         </div>
                     </div>
                     <h3 class="font-heading text-lg font-semibold text-primary-800 mb-1">
-                        Jane Doe
+                        {{ member.name }}
                     </h3>
-                    <p class="text-accent-600 font-medium text-sm">
-                        Vice President
+                    <p class="text-accent-600 font-medium text-sm mb-2">
+                        {{ member.position }}
                     </p>
-                </div>
-                
-                <!-- Secretary -->
-                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-                    <div class="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden border-4 border-accent-500">
-                        <img src="/assets/images/committee/peter-jones.jpg" alt="Peter Jones" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="w-full h-full bg-accent-400 flex items-center justify-center" style="display: none;">
-                            <span class="text-primary-800 font-bold text-sm">PJ</span>
-                        </div>
+                    {% if member.bio %}
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        {{ member.bio }}
+                    </p>
+                    {% endif %}
+                    {% if member.email %}
+                    <div class="mt-3">
+                        <a href="mailto:{{ member.email }}" 
+                           class="text-primary-600 hover:text-primary-700 text-xs">
+                            Contact
+                        </a>
                     </div>
-                    <h3 class="font-heading text-lg font-semibold text-primary-800 mb-1">
-                        Peter Jones
-                    </h3>
-                    <p class="text-accent-600 font-medium text-sm">
-                        Secretary
-                    </p>
+                    {% endif %}
                 </div>
-                
-                <!-- Treasurer -->
-                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-                    <div class="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden border-4 border-accent-500">
-                        <img src="/assets/images/committee/alice-williams.jpg" alt="Alice Williams" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="w-full h-full bg-accent-400 flex items-center justify-center" style="display: none;">
-                            <span class="text-primary-800 font-bold text-sm">AW</span>
-                        </div>
-                    </div>
-                    <h3 class="font-heading text-lg font-semibold text-primary-800 mb-1">
-                        Alice Williams
-                    </h3>
-                    <p class="text-accent-600 font-medium text-sm">
-                        Treasurer
-                    </p>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -180,7 +138,10 @@ description: Learn about Southern District Cricket Club Darwin - The Crocs. Our 
                 <!-- Facilities Image -->
                 <div class="order-2 lg:order-1">
                     <div class="bg-white rounded-xl shadow-lg p-4">
-                        <img src="/assets/images/club-facilities.jpg" alt="Club Facilities" class="w-full h-64 object-cover rounded-lg" onerror="this.src='/assets/images/placeholder-facilities.jpg'">
+                        <img src="/assets/images/gerry-wood-oval.jpeg" 
+                             alt="Club Facilities" 
+                             class="w-full h-64 object-cover rounded-lg" 
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5Ij5DbHViIEZhY2lsaXRpZXM8L3RleHQ+PC9zdmc+'">
                     </div>
                 </div>
                 
@@ -188,37 +149,21 @@ description: Learn about Southern District Cricket Club Darwin - The Crocs. Our 
                 <div class="order-1 lg:order-2">
                     <div class="bg-white rounded-xl shadow-lg p-6">
                         <ul class="space-y-3">
+                            {% for facility in about.facilities %}
                             <li class="flex items-start space-x-3">
                                 <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                <span class="text-gray-700">Well-maintained turf and synthetic pitches.</span>
+                                <span class="text-gray-700 text-sm">{{ facility }}</span>
                             </li>
-                            <li class="flex items-start space-x-3">
-                                <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-gray-700">Modern training nets for practice sessions.</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-gray-700">A comfortable clubhouse with amenities.</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-gray-700">Ample parking and spectator areas.</span>
-                            </li>
+                            {% endfor %}
                         </ul>
-                        
+                        <!--
                         <div class="mt-6 pt-6 border-t border-gray-200">
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                We are committed to continuously improving our facilities to provide the best possible experience for everyone involved with The Crocs.
+                                {{ about.facilitiesDescription }}
                             </p>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

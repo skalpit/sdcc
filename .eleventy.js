@@ -33,6 +33,26 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, limit);
   });
   
+  // Filter to URL-encode SVG for inline CSS background-image
+    eleventyConfig.addFilter("urlEncodeSvg", function(svgString) {
+        // Encode most common characters that cause issues in data URIs
+        // This regex specifically targets characters that need encoding for URL contexts
+        const encoded = encodeURIComponent(svgString)
+            .replace(/'/g, '%27')  // Single quotes
+            .replace(/"/g, '%22'); // Double quotes
+
+        // Optional: further optimize for CSS data URI by replacing characters
+        // that are safe unencoded in URLs but not necessarily in HTML attributes.
+        // For SVGs in background-image, some characters like #, <, > are essential to encode.
+        // However, encodeURIComponent already handles most of these.
+        // We ensure a few CSS-specific ones are also covered.
+        const finalEncoded = encoded
+            .replace(/\(/g, '%28')
+            .replace(/\)/g, '%29');
+
+        return finalEncoded;
+    });
+  
   // Image optimization shortcode (updated for Eleventy 3.x)
   eleventyConfig.addAsyncShortcode("image", async function(src, alt, sizes = "100vw") {
     if(alt === undefined) {

@@ -1,0 +1,268 @@
+[
+  {
+    "name": "EPG Solutions",
+    "type": "Platinum",
+    "website": "https://epgsolutions.com.au",
+    "logo": "/assets/images/sponsors/epg-solutions.png",
+    "description": "Leading engineering and project management solutions"
+  },
+  {
+    "name": "Apex Steel Supplies",
+    "type": "Diamond",
+    "website": "https://apexsteel.com.au",
+    "logo": "/assets/images/sponsors/apex-steel.png",
+    "description": "Quality steel supplies and fabrication services"
+  },
+  {
+    "name": "Vita Gustafson & Associates",
+    "type": "Gold",
+    "website": "",
+    "logo": "/assets/images/sponsors/vita-gustafson.png",
+    "description": "Professional consulting services"
+  },
+  {
+    "name": "SAGE Landscape Material Supplies",
+    "type": "Gold",
+    "website": "",
+    "logo": "/assets/images/sponsors/sage-landscape.png",
+    "description": "Landscape materials and supplies"
+  },
+  {
+    "name": "TJM 4x4 Equipped",
+    "type": "Gold",
+    "website": "https://tjm.com.au",
+    "logo": "/assets/images/sponsors/tjm-4x4.png",
+    "description": "4WD accessories and equipment"
+  },
+  {
+    "name": "Thinkwater Darwin",
+    "type": "Silver",
+    "website": "https://thinkwater.com.au",
+    "logo": "/assets/images/sponsors/thinkwater.png",
+    "description": "Water solutions and pumping systems"
+  },
+  {
+    "name": "KND Autos",
+    "type": "Silver",
+    "website": "",
+    "logo": "/assets/images/sponsors/knd-autos.png",
+    "description": "Automotive services and repairs"
+  },
+  {
+    "name": "NT Fasteners",
+    "type": "Silver",
+    "website": "",
+    "logo": "/assets/images/sponsors/nt-fasteners.png",
+    "description": "Industrial fasteners and hardware"
+  },
+  {
+    "name": "Steeline Group",
+    "type": "Gold",
+    "website": "https://steeline.com.au",
+    "logo": "/assets/images/sponsors/steeline.png",
+    "description": "Steel roofing and building products"
+  },
+  {
+    "name": "Territory Timber and Hardware",
+    "type": "Silver",
+    "website": "",
+    "logo": "/assets/images/sponsors/territory-timber.png",
+    "description": "Timber and hardware supplies"
+  },
+  {
+    "name": "Darwin Custom Builds",
+    "type": "Silver and Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/darwin-custom-builds.png",
+    "description": "Custom building and construction"
+  },
+  {
+    "name": "Manitoba Children's Centre - The Nook",
+    "type": "Silver",
+    "website": "",
+    "logo": "/assets/images/sponsors/manitoba-childrens-centre.png",
+    "description": "Children's services and care"
+  },
+  {
+    "name": "Super City Concrete Cutting NT",
+    "type": "Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/super-city-concrete.png",
+    "description": "Concrete cutting and drilling services"
+  },
+  {
+    "name": "MECNT Pty Ltd",
+    "type": "Silver",
+    "website": "",
+    "logo": "/assets/images/sponsors/mecnt.png",
+    "description": "Mechanical and electrical contracting"
+  },
+  {
+    "name": "HB Concrete",
+    "type": "Silver",
+    "website": "",
+    "logo": "/assets/images/sponsors/hb-concrete.png",
+    "description": "Concrete supply and services"
+  },
+  {
+    "name": "Rhino Industrial",
+    "type": "Silver",
+    "website": "",
+    "logo": "/assets/images/sponsors/rhino-industrial.png",
+    "description": "Industrial equipment and supplies"
+  },
+  {
+    "name": "Howard Springs Tavern",
+    "type": "General plus Member draw vouchers",
+    "website": "",
+    "logo": "/assets/images/sponsors/howard-springs-tavern.png",
+    "description": "Local tavern and hospitality"
+  },
+  {
+    "name": "Northern Power Services",
+    "type": "General",
+    "website": "",
+    "logo": "/assets/images/sponsors/northern-power.png",
+    "description": "Electrical and power services"
+  },
+  {
+    "name": "Tim Garner Landscaping",
+    "type": "General and Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/tim-garner-landscaping.png",
+    "description": "Professional landscaping services"
+  },
+  {
+    "name": "Darwin Corporate Floors",
+    "type": "General",
+    "website": "",
+    "logo": "/assets/images/sponsors/darwin-corporate-floors.png",
+    "description": "Commercial flooring solutions"
+  },
+  {
+    "name": "McDonalds",
+    "type": "Community",
+    "website": "https://mcdonalds.com.au",
+    "logo": "/assets/images/sponsors/mcdonalds.png",
+    "description": "Fast food restaurant chain"
+  },
+  {
+    "name": "Lavercome Grader Services",
+    "type": "Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/lavercome-grader.png",
+    "description": "Earthmoving and grading services"
+  },
+  {
+    "name": "G & R Constructions",
+    "type": "Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/gr-constructions.png",
+    "description": "Construction and building services"
+  },
+  {
+    "name": "Sunbuild",
+    "type": "Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/sunbuild.png",
+    "description": "Building and construction services"
+  },
+  {
+    "name": "Reece Plumbing Supplies",
+    "type": "Boundary Sign",
+    "website": "https://reece.com.au",
+    "logo": "/assets/images/sponsors/reece.png",
+    "description": "Plumbing supplies and equipment"
+  },
+  {
+    "name": "Coolalinga Central",
+    "type": "Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/coolalinga-central.png",
+    "description": "Shopping center and retail"
+  },
+  {
+    "name": "Gerard Brown MLA",
+    "type": "Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/gerard-brown.png",
+    "description": "Member of Legislative Assembly"
+  },
+  {
+    "name": "Andrew Mackay MLA",
+    "type": "Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/andrew-mackay.png",
+    "description": "Member of Legislative Assembly"
+  },
+  {
+    "name": "Express Signs",
+    "type": "Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/express-signs.png",
+    "description": "Signage and printing services"
+  },
+  {
+    "name": "Pepper Livestock Transport",
+    "type": "Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/pepper-livestock.png",
+    "description": "Livestock transportation services"
+  },
+  {
+    "name": "Top End Signs and Sales",
+    "type": "Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/top-end-signs.png",
+    "description": "Signs and sales services"
+  },
+  {
+    "name": "Keleson Constructions",
+    "type": "Boundary Sign",
+    "website": "",
+    "logo": "/assets/images/sponsors/keleson.png",
+    "description": "Construction and building services"
+  },
+  {
+    "name": "FuelXpress",
+    "type": "22 x $50 Fuel Vouchers",
+    "website": "",
+    "logo": "/assets/images/sponsors/fuelxpress.png",
+    "description": "Fuel supply services"
+  },
+  {
+    "name": "Dominos Coolalinga",
+    "type": "Pizza Vouchers",
+    "website": "https://dominos.com.au",
+    "logo": "/assets/images/sponsors/dominos.png",
+    "description": "Pizza delivery and takeaway"
+  },
+  {
+    "name": "Kennards",
+    "type": "Hire equipment",
+    "website": "https://kennards.com.au",
+    "logo": "/assets/images/sponsors/kennards.png",
+    "description": "Equipment hire and rental"
+  },
+  {
+    "name": "Humpty Doo Bakery",
+    "type": "Loaves of bread each week",
+    "website": "",
+    "logo": "/assets/images/sponsors/humpty-doo-bakery.png",
+    "description": "Local bakery and fresh bread"
+  },
+  {
+    "name": "Bendigo Bank",
+    "type": "Supporter",
+    "website": "https://bendigobank.com.au",
+    "logo": "/assets/images/sponsors/bendigo-bank.png",
+    "description": "Community banking services"
+  },
+  {
+    "name": "Cricket and Football Shop",
+    "type": "Uniforms and equipment",
+    "website": "",
+    "logo": "/assets/images/sponsors/cricket-football-shop.png",
+    "description": "Sports uniforms and equipment"
+  }
+]

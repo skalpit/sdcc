@@ -36,6 +36,10 @@
     {
       "title": "Fixtures & Results",
       "url": "/fixtures/"
+    },
+    {
+      "title": "Sponsors",
+      "url": "/sponsors/"
     }
   ],
   "footerLinks": [
@@ -54,6 +58,10 @@
     {
       "title": "News",
       "url": "/news/"
+    },
+    {
+      "title": "Sponsors",
+      "url": "/sponsors/"
     }
   ],
   "buildTime": "{{ 'now' | date: '%Y-%m-%d %H:%M:%S' }}"

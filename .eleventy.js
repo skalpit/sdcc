@@ -33,6 +33,46 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, limit);
   });
   
+
+  // Sponsor filtering filters
+  eleventyConfig.addFilter("selectattr", function(array, attr, value) {
+    return array.filter(item => {
+      if (value === "equalto") {
+        return item[attr] === arguments[3];
+      }
+      return item[attr] === value;
+    });
+  });
+
+  eleventyConfig.addFilter("rejectattr", function(array, attr, operator, value) {
+    return array.filter(item => {
+      if (operator === "in") {
+        return !value.includes(item[attr]);
+      }
+      if (operator === "search") {
+        return !item[attr].toLowerCase().includes(value.toLowerCase());
+      }
+      return item[attr] !== value;
+    });
+  });
+
+  // Custom filter for sponsor type searching
+  eleventyConfig.addFilter("search", function() {
+    // This is handled in the template logic
+    return true;
+  });
+
+  // Add global data for sponsors with proper ordering
+  eleventyConfig.addGlobalData("sponsorTypes", {
+    "Platinum": { order: 1, color: "gray", icon: "star" },
+    "Diamond": { order: 2, color: "blue", icon: "heart" },
+    "Gold": { order: 3, color: "yellow", icon: "star" },
+    "Silver": { order: 4, color: "gray", icon: "thumbs-up" },
+    "General": { order: 5, color: "primary", icon: "heart" },
+    "Community": { order: 6, color: "primary", icon: "heart" },
+    "Boundary Sign": { order: 7, color: "primary", icon: "heart" }
+  });
+  
   // Filter to URL-encode SVG for inline CSS background-image
     eleventyConfig.addFilter("urlEncodeSvg", function(svgString) {
         // Encode most common characters that cause issues in data URIs

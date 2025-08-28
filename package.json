@@ -1,7 +1,7 @@
 {
   "name": "southern-district-cricket-club",
   "version": "1.0.0",
-  "description": "Southern District Cricket Club Darwin",
+  "description": "Southern Districts Cricket Club Darwin",
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run css:watch\" \"npm run eleventy:dev\"",

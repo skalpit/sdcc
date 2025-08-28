@@ -1,10 +1,10 @@
 {
-  "title": "Southern District Cricket Club, Darwin",
+  "title": "Southern Districts Cricket Club, Darwin",
   "subtitle": "The Crocs",
   "tagline": "Pride of Darwin Cricket",
   "description": "Join us for an exciting season of cricket! Discover our teams, follow our progress, and become part of our vibrant community.",
   "url": "https://www.sdcccrocs.com.au",
-  "author": "Southern District Cricket Club",
+  "author": "Southern Districts Cricket Club",
   "email": "sdcccrocs@gmail.com",
   "email2": "info@sdcccrocs.com.au",
   "phone": "0448 883239",
@@ -17,7 +17,8 @@
     "country": "Australia"
   },
   "social": {
-    "facebook": "https://www.facebook.com/SDCCCrocs/"
+    "facebook": "https://www.facebook.com/SDCCCrocs/",
+    "instagram": "https://www.instagram.com/southerndistrictscricketclub/"
   },
   "navigation": [
     {

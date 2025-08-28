@@ -1,4 +1,4 @@
-// Facebook Widget Enhancement for Southern District Cricket Club
+// Facebook Widget Enhancement for Southern Districts Cricket Club
 
 document.addEventListener('DOMContentLoaded', function() {
     

@@ -1,18 +1,19 @@
 {
   "story": {
-    "foundingYear": "19xx",
-    "groundName": "Marrara Cricket Ground",
+    "foundingYear": "1981",
+    "groundName": "Gerry Wood Oval",
     "description": [
-      "Founded in 19xx, Southern District Cricket Club, Darwin has a rich history of fostering cricketing talent and sportsmanship in Darwin. We are more than just a cricket club; we are a community dedicated to promoting the spirit of cricket, teamwork, and fair play. From our passionate senior teams to our vibrant junior programs, we strive for excellence on and off the field.",
-      "Our home ground, Marrara Cricket Ground, is a hub for cricket enthusiasts. We welcome players of all ages and skill levels."
+      "Southern Districts Cricket Club Inc. has been a proud part of the Northern Territory cricket community since its founding. Based at Gerry Wood Oval in Freds Pass Reserve, the club plays in the Darwin & Districts Cricket Competition. It offers inclusive programs for juniors, seniors, and women, fostering growth across all levels.",
+      "Southern Districts Cricket Club commenced in 1981 - fielding a D grade team. In 1982 the club became an incorporated association and in 1985, a turf wicket was established to enable the club to field an A grade team. The club entered the A grade competition in 1987.",
+      "SDCC continues to promote teamwork, development, and community spirit through the game of cricket."
     ]
   },
   "motto": {
     "options": [
-      "★★Darwin's South: Play Hard, Play Fair, Together.★★"
+      ""
     ]
   },
-  "mission": "To provide a welcoming and competitive environment for cricketers of all ages and abilities in Darwin, fostering skill development, sportsmanship, and a lifelong love for the game, while actively contributing to our local community.",
+  "mission": "To provide a welcoming and competitive environment for cricketers of all ages and abilities in rural area, fostering skill development, sportsmanship, and a lifelong love for the game, while actively contributing to our local community.",
   "committee": [
     {
       "name": "Clint Hayward",

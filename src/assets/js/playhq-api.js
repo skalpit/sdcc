@@ -43,7 +43,7 @@ class PlayHQIntegration {
         const matches = [
             {
                 id: 1,
-                homeTeam: 'Southern District CC',
+                homeTeam: 'Southern Districts CC',
                 awayTeam: 'Darwin CC',
                 date: '2025-06-07',
                 time: '9:00 AM',
@@ -54,7 +54,7 @@ class PlayHQIntegration {
             {
                 id: 2,
                 homeTeam: 'Palmerston CC',
-                awayTeam: 'Southern District CC',
+                awayTeam: 'Southern Districts CC',
                 date: '2025-06-14',
                 time: '1:00 PM',
                 venue: 'Palmerston Recreation Ground',
@@ -63,7 +63,7 @@ class PlayHQIntegration {
             },
             {
                 id: 3,
-                homeTeam: 'Southern District CC',
+                homeTeam: 'Southern Districts CC',
                 awayTeam: 'Nightcliff CC',
                 date: '2025-06-21',
                 time: '9:00 AM',
@@ -74,7 +74,7 @@ class PlayHQIntegration {
             {
                 id: 4,
                 homeTeam: 'Tracy Village CC',
-                awayTeam: 'Southern District CC',
+                awayTeam: 'Southern Districts CC',
                 date: '2025-06-28',
                 time: '2:00 PM',
                 venue: 'Tracy Village Oval',
@@ -83,7 +83,7 @@ class PlayHQIntegration {
             },
             {
                 id: 5,
-                homeTeam: 'Southern District CC',
+                homeTeam: 'Southern Districts CC',
                 awayTeam: 'Waratah CC',
                 date: '2025-07-05',
                 time: '10:00 AM',

@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "Welcome to Southern District Cricket Club, Darwin",
+    "title": "Welcome to Southern Districts Cricket Club, NT",
     "subtitle": "The Crocs - Pride of Darwin Cricket",
     "description": "Join us for an exciting season of cricket! Discover our teams, follow our progress, and become part of our vibrant community.",
     "primaryButton": {
@@ -30,16 +30,16 @@
   },
   "joinSection": {
     "title": "Join The The Crocs!",
-    "description": "Whether you're an experienced player, a budding junior, or a passionate supporter, there's a place for you at Southern District Cricket Club.",
+    "description": "Whether you're an experienced player, a budding junior, or a passionate supporter, there's a place for you at Southern Districts Cricket Club.",
     "buttonText": "Find Out How to Join",
     "buttonUrl": "/about/#join"
   },
   "footer": {
-    "clubName": "Southern District Cricket Club, Darwin",
+    "clubName": "Southern Districts Cricket Club, NT",
     "nickname": "The Crocs",
     "address": "GERRY WOOD OVAL, Freds Pass Reserve, Bees Creek, NT 0822, Australia",
-    "copyright": "© 2025 Southern District Cricket Club, Darwin. All rights reserved.",
-    "credit": "Website by Hrishi Digital",
+    "copyright": "© 2025 Southern Districts Cricket Club, NT. All rights reserved.",
+    "credit": "Website by Hrishi Digital Solutions (ABN: 69 654 278 029)",
     "creditUrl": "https://www.hrishidigital.com.au/",
     "socialText": "Follow us on social media for the latest updates!"
   }

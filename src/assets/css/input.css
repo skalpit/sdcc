@@ -2,30 +2,30 @@
 
 /* CSS Custom Properties for Theme Configuration */
 :root {
-  /* Primary Colors (Cricket Green) */
-  --color-primary-50: #f0f9f4;
-  --color-primary-100: #dcf2e4;
-  --color-primary-200: #bce5ce;
-  --color-primary-300: #8dd2ae;
-  --color-primary-400: #57b885;
-  --color-primary-500: #339d68;
-  --color-primary-600: #257f52;
-  --color-primary-700: #1f6543;
-  --color-primary-800: #1b5037;
-  --color-primary-900: #17422f;
-  --color-primary-950: #0b2419;
+  /* Primary Colors (Club Red) */
+  --color-primary-50: #fbeaec;
+  --color-primary-100: #f6d5d9;
+  --color-primary-200: #eeb0b8;
+  --color-primary-300: #e38793;
+  --color-primary-400: #d95f71;
+  --color-primary-500: #c93447; /* target hue */
+  --color-primary-600: #a92c3b;
+  --color-primary-700: #8a2531;
+  --color-primary-800: #6e1e27;
+  --color-primary-900: #591a21;
+  --color-primary-950: #2f0c10;
 
-  /* Secondary Colors (Light Green) */
-  --color-secondary-50: #f0fdf4;
-  --color-secondary-100: #dcfce7;
-  --color-secondary-200: #bbf7d0;
-  --color-secondary-300: #86efac;
-  --color-secondary-400: #4ade80;
-  --color-secondary-500: #22c55e;
-  --color-secondary-600: #16a34a;
-  --color-secondary-700: #15803d;
-  --color-secondary-800: #166534;
-  --color-secondary-900: #14532d;
+  /* Secondary Colors (Light Pink) */
+  --color-secondary-50: #fffafa;
+  --color-secondary-100: #fef2f4;
+  --color-secondary-200: #faebed; /* target hue */
+  --color-secondary-300: #f3dbe0;
+  --color-secondary-400: #eac2cb;
+  --color-secondary-500: #dea2af;
+  --color-secondary-600: #c57f8e;
+  --color-secondary-700: #a65f70;
+  --color-secondary-800: #874a59;
+  --color-secondary-900: #6d3c49;
 
   /* Accent Colors (Yellow) */
   --color-accent-50: #fefce8;
@@ -42,6 +42,18 @@
   /* Fonts */
   --font-heading: 'Playfair Display', 'Georgia', serif;
   --font-body: 'Inter', 'Helvetica Neue', sans-serif;
+}
+
+/* Jersey Theme Tokens */
+:root {
+  --jersey-bg: #0f1012;           /* deep charcoal like the shirt body */
+  --jersey-panel: #141518;        /* slightly lighter panel */
+  --jersey-border: #1e2024;       /* subtle borders on dark */
+  --jersey-text: #f5f6f7;         /* high-contrast off-white */
+  --jersey-muted: #c9cbd1;        /* muted text on dark */
+  --jersey-red: var(--color-primary-500);     /* brand red */
+  --jersey-red-dark: var(--color-primary-700);
+  --jersey-red-light: var(--color-primary-300);
 }
 
 /* Import fonts */
@@ -64,16 +76,32 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Button Components using standard Tailwind classes */
 .btn-primary {
-  @apply bg-yellow-400 hover:bg-yellow-500 text-green-900 font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  @apply font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  color: var(--jersey-text);
+  background-color: var(--jersey-red);
+  border: 1px solid var(--jersey-red-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--jersey-red-dark);
 }
 
 .btn-secondary {
-  @apply border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-green-900 font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105;
+  @apply font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105;
+  color: var(--jersey-text);
+  background-color: transparent;
+  border: 2px solid var(--jersey-red);
 }
 
+.btn-secondary:hover { background-color: var(--jersey-red); }
+
 .btn-dark {
-  @apply bg-green-700 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  @apply text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  background-color: var(--jersey-panel);
+  border: 1px solid var(--jersey-border);
 }
+
+.btn-dark:hover { background-color: var(--jersey-bg); }
 
 /* Card Components */
 .card {
@@ -100,10 +128,58 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero-bg {
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.95) 0%, rgba(21, 128, 61, 0.98) 50%, rgba(20, 83, 45, 0.99) 100%);
+  background: linear-gradient(135deg, rgba(20, 21, 24, 0.98) 0%, rgba(15, 16, 18, 0.98) 40%, rgba(0, 0, 0, 0.98) 100%);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}
+
+/* Hero variant: 40% red split like the jersey (left-to-right) */
+.hero-red-split {
+  background: linear-gradient(to right,
+    var(--color-primary-500) 0%,
+    var(--color-primary-500) 40%,
+    var(--jersey-bg) 40%,
+    var(--jersey-bg) 100%);
+  color: var(--jersey-text);
+}
+
+/* Vertical split (top red 40%) */
+.hero-red-split-vertical {
+  background: linear-gradient(to bottom,
+    var(--color-primary-500) 0%,
+    var(--color-primary-500) 40%,
+    var(--jersey-bg) 40%,
+    var(--jersey-bg) 100%);
+  color: var(--jersey-text);
+}
+
+/* Utility: full red background section */
+.jersey-red {
+  background-color: var(--color-primary-500);
+  color: var(--jersey-text);
+}
+
+/* Utility: red band (useful for thin header/footer bands) */
+.jersey-red-band {
+  background: linear-gradient(to right, var(--color-primary-700), var(--color-primary-500), var(--color-primary-700));
+  color: var(--jersey-text);
+}
+
+/* Jersey dark backgrounds */
+.jersey-dark {
+  background-color: var(--jersey-bg);
+  color: var(--jersey-text);
+}
+
+.jersey-panel {
+  background-color: var(--jersey-panel);
+  color: var(--jersey-text);
+  border: 1px solid var(--jersey-border);
+}
+
+.jersey-divider {
+  border-color: var(--jersey-border);
 }
 
 /* Container */
@@ -139,6 +215,40 @@ h1, h2, h3, h4, h5, h6 {
 .hover-lift {
   @apply transition-transform duration-300 hover:-translate-y-1;
 }
+
+/* Jersey stripes */
+.jersey-stripe-left,
+.jersey-stripe-right {
+  position: relative;
+  overflow: hidden;
+}
+
+.jersey-stripe-left::before,
+.jersey-stripe-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background: var(--jersey-red);
+  box-shadow: 0 0 0 2px var(--jersey-red-light) inset, 8px 0 0 0 rgba(255,255,255,0.08);
+}
+
+.jersey-stripe-left::before { left: 0; }
+.jersey-stripe-right::before { right: 0; }
+
+.jersey-stripe-accent-left::after,
+.jersey-stripe-accent-right::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.35), rgba(255,255,255,0));
+}
+
+.jersey-stripe-accent-left::after { left: 12px; }
+.jersey-stripe-accent-right::after { right: 12px; }
 
 /* Custom color classes using CSS variables */
 .bg-primary-50 { background-color: var(--color-primary-50); }

@@ -35,23 +35,33 @@ description: Learn about Southern Districts Cricket Club Darwin - The Crocs. Our
     </div>
 </section>
 
-<!-- Club Motto Section -->
-<!--<section class="page-section bg-primary-800 text-white">
+<!-- Club Song Section -->
+<section class="page-section bg-primary-800 text-white">
     <div class="container">
         <div class="max-w-5xl mx-auto text-center">
             <h2 class="font-heading text-2xl sm:text-3xl font-bold mb-6 text-accent-400">
-                Our Club Motto
+                Our Club Song
             </h2>
             <div class="bg-primary-700 rounded-xl p-6 shadow-lg">                
-                <div class="space-y-3 text-yellow-300">
-                    {% for option in about.motto.options %}
-                    <p><strong>{{ option }}</strong></p>
+                <div class="space-y-1 text-yellow-300 text-center">
+                    {% for line in about.clubSong %}
+                    {% if line == "" %}
+                    <br>
+                    {% elif line == "SSShhhhh!" %}
+                    <p class="text-2xl font-bold text-accent-400">{{ line }}</p>
+                    {% elif line == "(Whisper)" %}
+                    <p class="text-sm italic text-gray-300">{{ line }}</p>
+                    {% elif line == "(Shout) AND ONE HELL-UVA BITE!" %}
+                    <p class="text-lg font-bold text-accent-400">{{ line }}</p>
+                    {% else %}
+                    <p>{{ line }}</p>
+                    {% endif %}
                     {% endfor %}
                 </div>
             </div>
         </div>
     </div>
-</section>-->
+</section>
 
 <!-- Club Mission Section -->
 <section class="page-section bg-secondary-50">

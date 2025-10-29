@@ -36,25 +36,25 @@ description: Learn about Southern Districts Cricket Club Darwin - The Crocs. Our
 </section>
 
 <!-- Club Song Section -->
-<section class="page-section bg-primary-800 text-white">
+<section class="page-section bg-white">
     <div class="container">
         <div class="max-w-5xl mx-auto text-center">
-            <h2 class="font-heading text-2xl sm:text-3xl font-bold mb-6 text-accent-400">
+            <h2 class="font-heading text-2xl sm:text-3xl font-bold mb-6 text-primary-800">
                 Our Club Song
             </h2>
-            <div class="bg-primary-700 rounded-xl p-6 shadow-lg">                
-                <div class="space-y-1 text-yellow-300 text-center">
+            <div class="bg-primary-700 rounded-xl p-6 shadow-lg border-5 border-black">                
+                <div class="space-y-1 text-white text-center">
                     {% for line in about.clubSong %}
                     {% if line == "" %}
                     <br>
                     {% elif line == "SSShhhhh!" %}
                     <p class="text-2xl font-bold text-accent-400">{{ line }}</p>
                     {% elif line == "(Whisper)" %}
-                    <p class="text-sm italic text-gray-300">{{ line }}</p>
+                    <p class="text-sm italic text-gray-200">{{ line }}</p>
                     {% elif line == "(Shout) AND ONE HELL-UVA BITE!" %}
-                    <p class="text-lg font-bold text-accent-400">{{ line }}</p>
+                    <p class="text-lg font-bold text-white">{{ line }}</p>
                     {% else %}
-                    <p>{{ line }}</p>
+                    <p class="text-white">{{ line }}</p>
                     {% endif %}
                     {% endfor %}
                 </div>
@@ -148,7 +148,7 @@ description: Learn about Southern Districts Cricket Club Darwin - The Crocs. Our
                 <!-- Facilities Image -->
                 <div class="order-2 lg:order-1">
                     <div class="bg-white rounded-xl shadow-lg p-4">
-                        <img src="/assets/images/gerry-wood-oval.jpeg" 
+                        <img src="/assets/images/gerry-wood-oval.jpg" 
                              alt="Club Facilities" 
                              class="w-full h-64 object-cover rounded-lg" 
                              onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5Ij5DbHViIEZhY2lsaXRpZXM8L3RleHQ+PC9zdmc+'">

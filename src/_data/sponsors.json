@@ -264,5 +264,12 @@
     "website": "https://www.cfsgear.com.au/",
     "logo": "/assets/images/sponsors/cricket-football-shop.png",
     "description": "Sports uniforms and equipment"
+  },
+  {
+    "name": "Outback Helicopter Airwork NT",
+    "type": "Main prize for the raffles",
+    "website": "https://www.outbackhelicopters.com.au/",
+    "logo": "/assets/images/sponsors/Outback-Helicopter-Logo.jpg",
+    "description": "Helicopter charter"
   }
 ]

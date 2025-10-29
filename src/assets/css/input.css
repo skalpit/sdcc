@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   @apply font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
   color: var(--jersey-text);
   background-color: var(--jersey-red);
-  border: 1px solid var(--jersey-red-dark);
+  border: 1px solid black;
 }
 
 .btn-primary:hover {
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   @apply font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105;
   color: var(--jersey-text);
   background-color: transparent;
-  border: 2px solid var(--jersey-red);
+  border: 1px solid black;
 }
 
 .btn-secondary:hover { background-color: var(--jersey-red); }
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-dark {
   @apply text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
   background-color: var(--jersey-panel);
-  border: 1px solid var(--jersey-border);
+  border: 1px solid black;
 }
 
 .btn-dark:hover { background-color: var(--jersey-bg); }

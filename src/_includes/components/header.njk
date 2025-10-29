@@ -1,8 +1,8 @@
-<header class="bg-primary-800 shadow-lg sticky top-0 z-40">
+<header class="bg-black shadow-lg sticky top-0 z-40">
     <div class="container">
         <div class="flex items-center justify-between h-16 lg:h-20">
             <!-- Logo and Club Name -->
-            <div class="flex items-center space-x-3">
+            <a href="/" class="flex items-center space-x-3 hover:opacity-80 transition-opacity">
                 <div class="flex-shrink-0">
                     <img src="/assets/images/logo.png" alt="{{ site.title }} Logo" class="h-10 w-10 lg:h-12 lg:w-12">
                 </div>
@@ -14,7 +14,7 @@
                         {{ site.subtitle }}
                     </p>
                 </div>
-            </div>
+            </a>
             
             <!-- Desktop Navigation -->
             <nav class="hidden lg:flex items-center space-x-8" aria-label="Main Navigation">
@@ -42,10 +42,10 @@
         
         <!-- Mobile Navigation Menu -->
         <div class="mobile-menu hidden lg:hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 border-t border-primary-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 border-t border-gray-800">
                 {% for item in site.navigation %}
                 <a href="{{ item.url }}" 
-                   class="block px-3 py-2 text-white hover:text-accent-400 hover:bg-primary-700 rounded-md font-medium transition-colors {% if page.url == item.url %}text-accent-400 bg-primary-700{% endif %}"
+                   class="block px-3 py-2 text-white hover:text-accent-400 hover:bg-gray-900 rounded-md font-medium transition-colors {% if page.url == item.url %}text-accent-400 bg-gray-900{% endif %}"
                    {% if item.url == page.url %}aria-current="page"{% endif %}>
                     {{ item.title }}
                 </a>

@@ -2,18 +2,18 @@
 
 /* CSS Custom Properties for Theme Configuration */
 :root {
-  /* Primary Colors (Club Red) */
-  --color-primary-50: #fbeaec;
-  --color-primary-100: #f6d5d9;
-  --color-primary-200: #eeb0b8;
-  --color-primary-300: #e38793;
-  --color-primary-400: #d95f71;
-  --color-primary-500: #c93447; /* target hue */
-  --color-primary-600: #a92c3b;
-  --color-primary-700: #8a2531;
-  --color-primary-800: #6e1e27;
-  --color-primary-900: #591a21;
-  --color-primary-950: #2f0c10;
+  /* Primary Colors (Bright Club Red) */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #ef4444; /* bright red */
+  --color-primary-600: #dc2626;
+  --color-primary-700: #b91c1c;
+  --color-primary-800: #991b1b;
+  --color-primary-900: #7f1d1d;
+  --color-primary-950: #450a0a;
 
   /* Secondary Colors (Light Pink) */
   --color-secondary-50: #fffafa;

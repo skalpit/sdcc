@@ -8,39 +8,59 @@
       "SDCC continues to promote teamwork, development, and community spirit through the game of cricket."
     ]
   },
-  "motto": {
-    "options": [
-      ""
-    ]
-  },
+  "clubSong": [
+    "Down the Stuart Highway,",
+    "Off the beaten track,",
+    "South of the Berrimah Line,",
+    "You'll find the Red, White, and Black",
+    "",
+    "You may not always see us,",
+    "But you know we're always there,",
+    "And when you've laid your eyes on us,",
+    "You'll be frozen by the glare",
+    "",
+    "SSShhhhh!",
+    "",
+    "(Whisper)",
+    "Silent, and cunning we stalk another prey,",
+    "We do not roar, we do not charge, it may take all day,",
+    "Patiently awaiting for when the time is right,",
+    "Just one move is all it takes",
+    "(Shout) AND ONE HELL-UVA BITE!",
+    "",
+    "So, pack your bloody passports,",
+    "And come on to the Pass",
+    "The District Crocs are here to play;",
+    "We kicked your flamein' ARSE!"
+  ],
   "mission": "To provide a welcoming and competitive environment for cricketers of all ages and abilities in rural area, fostering skill development, sportsmanship, and a lifelong love for the game, while actively contributing to our local community.",
   "committee": [
     {
       "name": "Clint Hayward",
       "position": "President",
       "initials": "CH",
-      "email": "president@southerndistrictcc.com.au",
+      "email": "president@sdcccrocs.com.au",
       "bio": "Clint has been with the club for over 15 years and brings extensive leadership experience to the role."
     },
     {
       "name": "Tory St Clair",
       "position": "Vice President",
       "initials": "TC",
-      "email": "vicepresident@southerndistrictcc.com.au",
+      "email": "vicepresident@sdcccrocs.com.au",
       "bio": "Tory is passionate about junior development and community engagement initiatives."
     },
     {
       "name": "Alison Jenkins",
       "position": "Secretary",
       "initials": "AJ",
-      "email": "secretary@southerndistrictcc.com.au",
+      "email": "secretary@sdcccrocs.com.au",
       "bio": "Alison manages all club communications and administrative duties with great attention to detail."
     },
     {
       "name": "Jennie Wilton",
       "position": "Treasurer",
       "initials": "JW",
-      "email": "treasurer@southerndistrictcc.com.au",
+      "email": "treasurer@sdcccrocs.com.au",
       "bio": "Jennie oversees the club's finances and ensures fiscal responsibility across all operations."
     },
     {

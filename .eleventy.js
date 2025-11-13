@@ -116,11 +116,9 @@ module.exports = function(eleventyConfig) {
     return Image.generateHTML(metadata, imageAttributes);
   });
   
-  // Configuration for GitHub Pages
+  // Configuration for Azure Static Web Apps
+  // Azure serves from root, so no path prefix needed
   let pathPrefix = "/";
-  if (process.env.GITHUB_REPOSITORY) {
-    pathPrefix = `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/`;
-  }
   
   return {
     dir: {

@@ -2,11 +2,11 @@
   "story": {
     "foundingYear": "1981",
     "groundName": "Gerry Wood Oval",
-    "description": [
-      "Southern Districts Cricket Club Inc. has been a proud part of the Northern Territory cricket community since its founding. Based at Gerry Wood Oval in Freds Pass Reserve, the club plays in the Darwin & Districts Cricket Competition. It offers inclusive programs for juniors, seniors, and women, fostering growth across all levels.",
-      "Southern Districts Cricket Club commenced in 1981 - fielding a D grade team. In 1982 the club became an incorporated association and in 1985, a turf wicket was established to enable the club to field an A grade team. The club entered the A grade competition in 1987.",
-      "SDCC continues to promote teamwork, development, and community spirit through the game of cricket."
-    ]
+      "description": [
+        "Southern Districts Cricket Club Inc. has been a proud part of the Northern Territory cricket community since its founding. Based at Gerry Wood Oval in the Freds Pass Reserve, the club competes in the Darwin & Districts Cricket Competition and offers inclusive programs for juniors, seniors, and women — fostering participation and growth at every level.",
+        "Established in 1981 with the formation of a D Grade team, the club became an incorporated association in 1982. A turf wicket was installed in 1985, paving the way for the club's entry into the A Grade competition in 1987.",
+        "Today, Southern Districts Cricket Club continues to promote teamwork, development, and community spirit through the game of cricket."
+      ]
   },
   "clubSong": [
     "Down the Stuart Highway,",
@@ -33,7 +33,7 @@
     "The District Crocs are here to play;",
     "We kicked your flamein' ARSE!"
   ],
-  "mission": "To provide a welcoming and competitive environment for cricketers of all ages and abilities in rural area, fostering skill development, sportsmanship, and a lifelong love for the game, while actively contributing to our local community.",
+  "mission": "To provide a welcoming and competitive environment for cricketers of all ages and abilities in the rural area, fostering skill development, sportsmanship, and a lifelong love for the game, while actively contributing to our local community.",
   "committee": [
     {
       "name": "Clint Hayward",
@@ -67,7 +67,7 @@
       "name": "Craig Johnston",
       "position": "Junior Cricket Coordinator",
       "initials": "CJ",
-      "email": "craig@kelesconstructions.com.au"
+      "email": "craig@kelesonconstructions.com.au"
     },
     {
       "name": "Stu Barker",

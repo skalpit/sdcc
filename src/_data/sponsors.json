@@ -49,25 +49,11 @@
     "description": "Automotive services and repairs"
   },
   {
-    "name": "NT Fasteners",
-    "type": "Silver",
-    "website": "",
-    "logo": "/assets/images/sponsors/ntf.jpg",
-    "description": "Industrial fasteners and hardware"
-  },
-  {
     "name": "Steeline Group",
     "type": "Gold",
     "website": "https://steeline.com.au",
     "logo": "/assets/images/sponsors/steeline.png",
     "description": "Steel roofing and building products"
-  },
-  {
-    "name": "Territory Timber and Hardware",
-    "type": "Silver",
-    "website": "",
-    "logo": "/assets/images/sponsors/territory-timber.png",
-    "description": "Timber and hardware supplies"
   },
   {
     "name": "Darwin Custom Builds",
@@ -84,8 +70,22 @@
     "description": "Children's services and care"
   },
   {
-    "name": "Super City Concrete Cutting NT",
-    "type": "Boundary Sign",
+    "name": "NT Fasteners",
+    "type": "Gold",
+    "website": "",
+    "logo": "/assets/images/sponsors/ntf.jpg",
+    "description": "Industrial fasteners and hardware"
+  },
+  {
+    "name": "Territory Timber and Hardware",
+    "type": "Gold",
+    "website": "",
+    "logo": "/assets/images/sponsors/territory-timber.png",
+    "description": "Timber and hardware supplies"
+  },
+  {
+    "name": "Supercity Concrete",
+    "type": "Silver",
     "website": "https://www.supercitynt.com.au/",
     "logo": "/assets/images/sponsors/super-city-concrete.png",
     "description": "Concrete cutting and drilling services"
@@ -271,5 +271,12 @@
     "website": "https://www.outbackhelicopters.com.au/",
     "logo": "/assets/images/sponsors/Outback-Helicopter-Logo.jpg",
     "description": "Helicopter charter"
+  },
+  {
+    "name": "Paspaley Pearls",
+    "type": "Major raffle sponsor",
+    "website": "https://www.paspaley.com/",
+    "logo": "/assets/images/sponsors/paspaley_logo.jpg",
+    "description": "Luxury Australian South Sea pearls"
   }
 ]

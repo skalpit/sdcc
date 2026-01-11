@@ -118,10 +118,14 @@ description: Learn about Southern Districts Cricket Club Darwin - The Crocs. Our
                     {% endif %}
                     {% if member.email %}
                     <div class="mt-3">
-                        <a href="mailto:{{ member.email }}" 
+                        {% if member.email == "TBA" %}
+                        <span class="text-gray-500 text-xs">TBA</span>
+                        {% else %}
+                        <a href="mailto:{{ member.email }}"
                            class="text-primary-600 hover:text-primary-700 text-xs">
                             Contact
                         </a>
+                        {% endif %}
                     </div>
                     {% endif %}
                 </div>

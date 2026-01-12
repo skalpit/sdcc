@@ -76,6 +76,11 @@
       "email": "sdcccrocs@gmail.com"
     },
     {
+      "name": "Heidi Mylius",
+      "position": "Registrar",
+      "initials": "HM"
+    },
+    {
       "name": "Stu Barker",
       "position": "General Committee Member",
       "initials": "SB"
@@ -102,6 +107,11 @@
       "position": "General Committee Member",
       "initials": "TM",
       "email": "sdcccrocs@gmail.com"
+    },
+    {
+      "name": "Jordan Doevendans",
+      "position": "General Committee Member",
+      "initials": "JD"
     }
   ],
   "facilities": [
